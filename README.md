@@ -3,17 +3,21 @@
 
 Welcome to my personal portfolio project! 🚀
 
+## About
+ This portfolio is a showcase of my skills, projects, and achievements. What makes it special? It's purely crafted with CSS, without the use of any frameworks. Embracing the power of raw CSS, I've designed and 
+ implemented every element to reflect my unique style and skills.
+ 
+---
 ## Table of Contents
 
 - [Home Section](https://gursimranjeet-singh.github.io/Personal-Portfolio-Website/#home)
 - [About Section](https://gursimranjeet-singh.github.io/Personal-Portfolio-Website/#about)
 - [Skills Section](https://gursimranjeet-singh.github.io/Personal-Portfolio-Website/#skills)
 - [Contact Section](https://gursimranjeet-singh.github.io/Personal-Portfolio-Website/#contact)
-
 ---
 
-## About
-This portfolio is a showcase of my skills, projects, and achievements. What makes it special? It's purely crafted with CSS, without the use of any frameworks. Embracing the power of raw CSS, I've designed and implemented every element to reflect my unique style and skills.
+
+
 
 ### Achievement: Framework-Free Design
 
@@ -36,8 +40,6 @@ Explore the meticulous design choices made to ensure a consistent and visually a
 ---
 
 ## Contact Information
-
-#### Example:
 - 📧 **Email:** gursimranjeet10singh@gmail.com
 
 #### Theme Modification
@@ -54,4 +56,4 @@ Explore the meticulous design choices made to ensure a consistent and visually a
 - Remove the entire `<audio>` tag along with CSS code.
 - Open the `script.js` file, remove unnecessary JavaScript code with the help of comments.
 
-## Feel free to experiment, customize, and make the portfolio suit your professional preferences!
+### Feel free to experiment, customize, and make the portfolio suit your professional preferences!

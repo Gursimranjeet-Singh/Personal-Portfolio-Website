@@ -1,9 +1,9 @@
-# Personal Portfolio Website 🌐 
+# [Personal Portfolio Website 🌐](https://gursimranjeet-singh.github.io/Personal-Portfolio-Website/#home)
 # GursimranjeetDev 👨‍💻 
 
 Welcome to my personal portfolio project! 🚀
 
-## About
+## [About](https://gursimranjeet-singh.github.io/Personal-Portfolio-Website/#about)
  This portfolio is a showcase of my skills, projects, and achievements. What makes it special? It's purely crafted with CSS, without the use of any frameworks. Embracing the power of raw CSS, I've designed and 
  implemented every element to reflect my unique style and skills.
  
@@ -39,7 +39,7 @@ Explore the meticulous design choices made to ensure a consistent and visually a
 
 ---
 
-## Contact Information
+## [Contact Information](https://gursimranjeet-singh.github.io/Personal-Portfolio-Website/#contact)
 - 📧 **Email:** gursimranjeet10singh@gmail.com
 
 #### Theme Modification

@@ -1,212 +1,212 @@
 
 #skills {
-display: flex;
-flex-direction: column;
-gap: 5rem;
-align-items: center;
-box-shadow: 5px 5px 5px 2px rgba(148, 146, 146, 0.854), 5px 5px 5px rgba(148, 146, 146);
-box-shadow: -5px -5px 5px 2px rgba(148, 146, 146, 0.854), 5px 5px 5px rgba(148, 146, 146);
-width: 90%;
-scroll-snap-align: center;
-}
-
-#quote {
-    margin-top: 5rem;
- width: 100%;
-    color: black;
-    font-size: 2rem;
-    background-color: white;
-    text-align: center;
-    
-}
-
-#dev {
-    text-align: center;
-  width: 50%;
-    color: black;
-    font-size: 2rem;
-    background-color: white;
-    height: 5vh;
-}
-
-#webstack {
-    height: 60vh;
     display: flex;
-    
-    align-items: center;
+    flex-direction: column;
     gap: 5rem;
-}
-
-#frontend,
-#backend {
-    background: radial-gradient(circle, rgba(0, 0, 0, 0.52), rgb(41, 37, 35));
-    font-size: 2rem;
-    color: rgb(194, 192, 192);
-    box-shadow: -5px -5px 5px 2px rgba(88, 88, 88, 0.854), 5px 5px 5px rgb(100, 98, 98);
-    width: 30vw;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 5%;
+    box-shadow: 5px 5px 5px 2px rgba(148, 146, 146, 0.854), 5px 5px 5px rgba(148, 146, 146);
+    box-shadow: -5px -5px 5px 2px rgba(148, 146, 146, 0.854), 5px 5px 5px rgba(148, 146, 146);
+    width: 90%;
+    scroll-snap-align: center;
+    }
     
-
-
-
-}
-
-#icons,#icons2  {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    gap: 10%;
-}
-
-
-
-
-
-
-
-#devprojtemp {
-    text-align: center;
-    width: 50%;
-    color: black;
-    font-size: 2rem;
-    background-color: white;
-    
-}
-
-#devproj {
-    width: 80%;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2%;
-    flex-wrap: wrap;
-}
-
-#devproj div {
-    background: radial-gradient(circle, rgba(0, 0, 0, 0.52), rgb(41, 37, 35));
-    box-shadow: -5px -5px 5px 2px rgba(88, 88, 88, 0.854), 5px 5px 5px rgb(100, 98, 98);
-    height: 42vh;
-    width: 33%;
-}
-
-#proglangtemp {
-    background-color: white;
-    width: 50%;
-    text-align: center;
-    color: black;
-    font-size: 2rem;
-}
-
-#progstack {
-    background: radial-gradient(circle, rgba(0, 0, 0, 0.52), rgb(41, 37, 35));
-    font-size: 2rem;
-    color: rgb(194, 192, 192);
-    box-shadow: -5px -5px 5px 2px rgba(88, 88, 88, 0.854), 5px 5px 5px rgb(100, 98, 98);
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-
-
-}
-
-#langicons {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    gap: 10%;
-}
-
-#progproj {
-    background-color: white;
-    height: 5vh;
-    text-align: center;
-    color: black;
-    font-size: 2rem;
-}
-
-#proglangprojtemp {
-    background-color: white;
-    width: 50%;
-    text-align: center;
-    font-size: 2rem;
-}
-
-#proglangproj {
-    width: 80%;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2%;
-    flex-wrap: wrap; 
-    margin-bottom: 2rem;
-}
-
-#proglangproj div {
-    background: radial-gradient(circle, rgba(0, 0, 0, 0.52), rgb(41, 37, 35));
-    box-shadow: -5px -5px 5px 2px rgba(88, 88, 88, 0.854), 5px 5px 5px rgb(100, 98, 98);
-    height: 42vh;
-    width: 33%;
-    margin-bottom: 2rem;
-}
-
-
-@media (max-width:850px) and (min-width:650px){
-    #frontend,#backend{
-        width: 35vw;
-    }
-    #devproj div{
-        width: 45%;
-    }
-    #devproj{
-        gap:10%
-    }
-    #progstack{
-        width:37vw;
-    }
-    #proglangproj{
-       
-        gap:10%
-    }
-    #proglangproj div{
-        width: 45%;
-    }
-
-
-}
-@media (max-width:650px){
-    #webstack{
-        flex-direction: column;
-    }
-    #frontend,#backend{
-        width: 50vw;
-    }
-    #devproj,#proglangproj {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        gap: 2rem;
-       
-    }
-    #devproj div,#proglangproj div {
-        width: 70%;
-        height: 16rem;
-       
-    }
-    #progstack {
+    #quote {
+        margin-top: 5rem;
+     width: 100%;
+        color: black;
+        font-size: 2rem;
+        background-color: white;
+        text-align: center;
         
-        width: 65%;
     }
-    #proglangproj div:nth-child(4){
+    
+    #dev {
+        text-align: center;
+      width: 50%;
+        color: black;
+        font-size: 2rem;
+        background-color: white;
+        height: 5vh;
+    }
+    
+    #webstack {
+        height: 60vh;
+        display: flex;
+        
+        align-items: center;
+        gap: 5rem;
+    }
+    
+    #frontend,
+    #backend {
+        background: radial-gradient(circle, rgba(0, 0, 0, 0.52), rgb(41, 37, 35));
+        font-size: 2rem;
+        color: rgb(194, 192, 192);
+        box-shadow: -5px -5px 5px 2px rgba(88, 88, 88, 0.854), 5px 5px 5px rgb(100, 98, 98);
+        width: 30vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5%;
+        
+    
+    
+    
+    }
+    
+    #icons,#icons2  {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 10%;
+    }
+    
+    
+    
+    
+    
+    
+    
+    #devprojtemp {
+        text-align: center;
+        width: 50%;
+        color: black;
+        font-size: 2rem;
+        background-color: white;
+        
+    }
+    
+    #devproj {
+        width: 80%;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2%;
+        flex-wrap: wrap;
+    }
+    
+    #devproj div {
+        background: radial-gradient(circle, rgba(0, 0, 0, 0.52), rgb(41, 37, 35));
+        box-shadow: -5px -5px 5px 2px rgba(88, 88, 88, 0.854), 5px 5px 5px rgb(100, 98, 98);
+        height: 42vh;
+        width: 33%;
+    }
+    
+    #proglangtemp {
+        background-color: white;
+        width: 50%;
+        text-align: center;
+        color: black;
+        font-size: 2rem;
+    }
+    
+    #progstack {
+        background: radial-gradient(circle, rgba(0, 0, 0, 0.52), rgb(41, 37, 35));
+        font-size: 2rem;
+        color: rgb(194, 192, 192);
+        box-shadow: -5px -5px 5px 2px rgba(88, 88, 88, 0.854), 5px 5px 5px rgb(100, 98, 98);
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+    
+    
+    }
+    
+    #langicons {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 10%;
+    }
+    
+    #progproj {
+        background-color: white;
+        height: 5vh;
+        text-align: center;
+        color: black;
+        font-size: 2rem;
+    }
+    
+    #proglangprojtemp {
+        background-color: white;
+        width: 50%;
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    #proglangproj {
+        width: 80%;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2%;
+        flex-wrap: wrap; 
         margin-bottom: 2rem;
     }
     
-}    
+    #proglangproj div {
+        background: radial-gradient(circle, rgba(0, 0, 0, 0.52), rgb(41, 37, 35));
+        box-shadow: -5px -5px 5px 2px rgba(88, 88, 88, 0.854), 5px 5px 5px rgb(100, 98, 98);
+        height: 42vh;
+        width: 33%;
+        margin-bottom: 2rem;
+    }
+    
+    
+    @media (max-width:850px) and (min-width:650px){
+        #frontend,#backend{
+            width: 35vw;
+        }
+        #devproj div{
+            width: 45%;
+        }
+        #devproj{
+            gap:10%
+        }
+        #progstack{
+            width:37vw;
+        }
+        #proglangproj{
+           
+            gap:10%
+        }
+        #proglangproj div{
+            width: 45%;
+        }
+    
+    
+    }
+    @media (max-width:650px){
+        #webstack{
+            flex-direction: column;
+        }
+        #frontend,#backend{
+            width: 50vw;
+        }
+        #devproj,#proglangproj {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            gap: 2rem;
+           
+        }
+        #devproj div,#proglangproj div {
+            width: 70%;
+            height: 16rem;
+           
+        }
+        #progstack {
+            
+            width: 65%;
+        }
+        #proglangproj div:nth-child(4){
+            margin-bottom: 2rem;
+        }
+        
+    }    

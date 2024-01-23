@@ -1,10 +1,10 @@
-// to stop audio
-alert("Press on Gursimranjeet Singh to stop audio");
-function stop_audio(){
-    var ply = document.getElementById('mybgaud');
-    var oldSrc = ply.src;// just to remember the old source
-    ply.src = "";// to stop the player you have to replace the source with nothing
-}
+// // to stop audio
+// alert("Press on Gursimranjeet Singh to stop audio");
+// function stop_audio(){
+//     var ply = document.getElementById('mybgaud');
+//     var oldSrc = ply.src;// just to remember the old source
+//     ply.src = "";// to stop the player you have to replace the source with nothing
+// }
 
 //reset form
 function formvalid() {

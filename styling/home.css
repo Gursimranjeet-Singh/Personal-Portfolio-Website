@@ -1,0 +1,512 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: garamond;
+    box-sizing: border-box;
+}
+
+:root {
+    /*global variable*/
+    --color1: white;
+    --color2: rgb(244, 244, 244);
+}
+
+html {
+    font-size: 62.5%;
+    width: 100vw;
+    height: 100%;
+}
+body {
+    font-family: sans-serif;
+    overflow: hidden;
+    height: 100%;
+    
+}
+#bar{
+    display: none;
+}
+#bar:hover,#bar:active,#bar:visited{
+    color:black;
+}
+
+
+#head {
+    position:sticky;
+    display: flex;
+    gap: 4.5rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color1);
+    height: 8vh;
+    width: 100vw;
+    z-index: 10;
+}
+
+img {
+    --hght: 50px;
+    /*local variable*/
+    width: var(--hght, 5rem);
+    /*5 rem is like alt attribute of image tag*/
+    height: var(--hght, 5rem);
+}
+
+
+#head ul {   
+    display: flex;
+    gap: 1.5rem;
+}
+
+#head ul li {
+    list-style: none;
+}
+
+#head ul li a {
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    font-weight: 700;
+    background-color: var(--color2);
+    font-size: 1.7rem;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    text-decoration: underline solid black;
+}
+
+#head ul li a:active {
+    color: rgb(68, 68, 167);
+}
+
+#icon {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+#call {
+    font-size: 1.5rem;
+    background-color: var(--color2);
+    padding: 3px;
+    border-radius: 5px;
+}
+
+#call:hover {
+    filter: invert();
+}
+
+#insta {
+    background-color: var(--color2);
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+#insta:hover {
+    filter: invert();
+}
+
+#lin {
+    font-size: 1.5rem;
+    background-color: var(--color2);
+    padding: 3px;
+    border-radius: 5px;
+}
+
+#lin:hover {
+    filter: invert();
+
+}
+
+
+/*  */
+/* #mybgaud {
+    display: none;
+} */
+    
+
+#bgimg {
+    margin-top: 7.5vh;
+    position: fixed; /*Change to fixed to cover the entire viewport */
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    top: 0; /*Position from the top of the viewport*/
+     left: 0; /*Position from the left of the viewport */
+     position: absolute;
+     background:radial-gradient(circle, rgba(0, 0, 0, 0.52), #292523);
+     margin: 0;
+     
+}
+
+
+
+#content {
+   
+    height: 92vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-image: url();
+    position: relative; /* Add relative positioning to create a stacking context */
+    z-index: 1; /* Higher z-index for the content to be above the video */
+     /* Enable vertical scrollbar for content overflow */
+     overflow-y: auto;
+     overflow-x: hidden;
+     
+     align-items: center;
+     scroll-snap-type: y mandatory;
+     
+}
+#content::-webkit-scrollbar {
+    width: 0; /* Set the width to 0 to hide the scrollbar in Webkit browsers */
+}
+
+
+/* for home page */
+#home {
+    margin-top:6vh ;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    scroll-snap-align: center;
+    /* since there is not overflow of content so no need for flex wrap */
+    /* no need to justify content and align item or align content */
+    /* main axis  is along horizontal as flex direction is row and cross axis is vertical */
+    /* flex flow is not useful since it include both wrap and direction here dirn is here but wrap is not here */
+    /* row gap and column gap can be used to add furtheur background to section box  */
+    /* but i consider no gap so no row and column gap is used or here gap:0px 0px; */
+}
+
+.home {
+    box-shadow: 5px 5px 5px 2px rgba(148, 146, 146, 0.854), -5px -5px 5px rgba(148, 146, 146);
+    
+    flex-grow: 5;
+    /*though you have mentioned this to be 5 times of other but still it will fill all the space  because the parent 
+    box having flex property is mentioned a width of full view port hence rather than occupying 5 times it will occupy all space between box
+    due to full viewport length
+    */
+   
+    /* margin-left: 1rem; */
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.9;
+    order: 2; /*for flex*/
+    display: flex;
+    justify-content: center;
+}
+
+
+#navulmob{
+    
+    flex-direction: column;
+    position: absolute;
+    margin-left: 50%;
+    z-index: 5;
+    width: 8rem;
+    height: 12rem;
+    order: 4;
+    padding: 2px;
+    background-image: linear-gradient(to right, rgba(127, 126, 126, 0.397), rgba(244, 244, 244, 0.306));
+    box-shadow: -5px -5px 5px 2px rgba(143, 143, 143, 0.854), 5px 5px 5px rgb(100, 98, 98);
+    
+}
+#navulmob li{
+    margin: 1rem;
+    list-style-type: none;
+    font-size: 1rem;
+}
+#navulmob li a{
+    color: rgb(227, 224, 224);
+    text-decoration: underline;
+}
+
+
+
+#hgur {
+    color: var(--color1);
+    font-size: 7rem;
+    z-index: 3;
+    font-family: arial;
+    letter-spacing: -1px;
+    transition-property: transform;
+    transition-delay: 1s;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    margin-top: 20rem;
+}
+
+.translhgur {
+    transform: translateX(20px);
+}
+
+#hsingh {
+    color: var(--color1);
+    font-size: 6.5rem;
+    z-index: 2;
+    font-family: arial;
+    letter-spacing: -1px;
+    transition-property: transform;
+    transition-delay: 3s;
+    transition-timing-function: ease-in;
+    transition-duration: 2s;
+    margin-top: 25rem;
+    margin-right: 10vw;
+
+}
+
+.translhsingh {
+    transform: translateX(20px);
+}
+
+
+
+
+#h4 {
+    /* Combinators > + ~*/
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: 720px;
+    z-index: 1;
+    font-size: 20px;
+    font-family: arial;
+}
+
+#gurimg {
+    background-image: url(img/gimg.png);
+    height: 45rem;
+    width: 45rem;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    background-size: cover;
+    z-index: 3;
+    align-self: self-start;
+    left: auto;
+}
+
+#ldesign {
+    left: 0;
+    width: 3.5vw;
+    height: 45vh;
+    order: 1;
+    /*for flex*/
+    border: 4px solid rgb(100, 98, 98);
+    text-indent: center;
+    z-index: 2;
+}
+
+#rdesign {
+    align-self: flex-end;
+    /*used to position individual flex element*/
+    width: 3.5vw;
+    height: 45vh;
+    order: 3;
+    /*for flex*/
+    border: 4px solid rgb(100, 98, 98);
+    z-index: 2;
+}
+
+#ldesign p {
+    transform: rotate(-90deg);
+    position: relative;
+    margin-top: 18vh;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color1);
+}
+
+#rdesign p {
+    transform: rotate(90deg);
+    margin-top: 18vh;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+#rdesign p a,
+#ldesign p a {
+    color: var(--color1);
+    font-weight: 700;
+}
+/* Responsiveness */
+
+
+@media (min-width:1326px){
+  /* no change in navigation bar */
+  #hgur{
+    font-size: 8rem;
+  }
+  #hsingh{
+    font-size: 7.5rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1325px) {
+    /* no change in navigation bar */
+    /* .home{
+        flex-direction: column;
+        box-shadow: none;
+     } */
+     .home{
+        flex-direction: column;
+       
+     }
+    #hgur{
+        margin-top: 0px;
+        font-size: 7.5rem;
+        width: 50vw;
+     }
+     #hsingh{
+         margin-top: 0px;
+         width: 50vw;
+         font-size: 7rem;
+         margin-left: 40%;
+        
+     }
+     #gurimg{
+         margin-top: 0px;
+         width: 50vw;
+         height:40rem ;
+         width: 40rem;
+         margin-left: 50%;
+         
+     }
+
+    
+}
+
+@media (min-width:768px ) and (max-width: 992px){
+/* no change in navigation bar */
+.home{
+    flex-direction: column;
+    box-shadow: none;
+ }
+#hgur{
+    margin-top: 0px;
+    font-size: 7.5rem;
+    width: 50vw;
+ }
+ #hsingh{
+     margin-top: 0px;
+     width: 50vw;
+     font-size: 7rem;
+     margin-left: 50%;
+    
+ }
+ #gurimg{
+     margin-top: 0px;
+     width: 50vw;
+     height:40rem ;
+     width: 40rem;
+     margin-left: 40%;
+     
+ }
+ #ldesign,#rdesign{
+    display: none;
+ }
+
+}
+   
+     
+
+@media (min-width:550px) and (max-width: 767px){
+     #ldesign,#rdesign{
+        display: none;
+     }
+     .home{
+        flex-direction: column;
+        box-shadow: none;
+     }
+     #icon,#head ul{
+        display: none;
+    }
+    #hgur{
+       margin-top: 0px;
+       font-size: 5.5rem;
+    }
+    #hsingh{
+        margin-top: 0px;
+        font-size: 6rem;
+        margin-left: 50vw;
+    }
+    #gurimg{
+        margin-top: 0px;
+        height:30rem ;
+        width: 30rem;
+        margin-left:auto;
+    }
+    #bar{
+        display: block;
+    }
+    #home{
+        box-shadow: none;
+    }
+     
+
+}
+@media (max-width:550px) and (min-width:448px){
+    
+    #ldesign,#rdesign{
+        display: none;
+     }
+     .home{
+        flex-direction: column;
+        box-shadow: none;
+     }
+     #icon,#head ul{
+        display: none;
+    }
+    #hgur{
+       margin-top: 0px;
+       font-size: 5.5rem;
+    }
+    #hsingh{
+        margin-top: 0px;
+        font-size: 6rem;
+        margin-left: 50vw;
+    }
+    #gurimg{
+        margin-top: 0px;
+        height:30rem ;
+        width: 30rem;
+        margin-left:auto;
+    }
+    #bar{
+        display: block;
+    }
+    
+}
+@media (max-width:448px) {
+    #ldesign,#rdesign{
+        display: none;
+     }
+     .home{
+        flex-direction: column;
+        box-shadow: none;
+     }
+     #icon,#head ul{
+        display: none;
+    }
+    #hgur{
+       margin-top: 0px;
+       font-size: 4.3rem;
+       
+    }
+    #hsingh{
+        margin-top: 0px;
+        font-size: 3.8rem;
+        margin-left: 50%;
+    }
+    #gurimg{
+        margin-top: 0px;
+        height:20rem ;
+        width: 20rem;
+        margin-left:auto;
+    }
+    #bar{
+        display: block;
+    }
+    
+}
+
+
+
+

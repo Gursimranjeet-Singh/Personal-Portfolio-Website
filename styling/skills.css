@@ -39,7 +39,7 @@ scroll-snap-align: center;
 
 #frontend,
 #backend {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.397), rgba(74, 71, 71, 0.306));
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.52), rgb(41, 37, 35));
     font-size: 2rem;
     color: rgb(194, 192, 192);
     box-shadow: -5px -5px 5px 2px rgba(88, 88, 88, 0.854), 5px 5px 5px rgb(100, 98, 98);
@@ -89,7 +89,7 @@ scroll-snap-align: center;
 }
 
 #devproj div {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.397), rgba(74, 71, 71, 0.306));
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.52), rgb(41, 37, 35));
     box-shadow: -5px -5px 5px 2px rgba(88, 88, 88, 0.854), 5px 5px 5px rgb(100, 98, 98);
     height: 42vh;
     width: 33%;
@@ -104,7 +104,7 @@ scroll-snap-align: center;
 }
 
 #progstack {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.397), rgba(74, 71, 71, 0.306));
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.52), rgb(41, 37, 35));
     font-size: 2rem;
     color: rgb(194, 192, 192);
     box-shadow: -5px -5px 5px 2px rgba(88, 88, 88, 0.854), 5px 5px 5px rgb(100, 98, 98);
@@ -148,14 +148,17 @@ scroll-snap-align: center;
     align-items: center;
     gap: 2%;
     flex-wrap: wrap; 
+    margin-bottom: 2rem;
 }
 
 #proglangproj div {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.397), rgba(74, 71, 71, 0.306));
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.52), rgb(41, 37, 35));
     box-shadow: -5px -5px 5px 2px rgba(88, 88, 88, 0.854), 5px 5px 5px rgb(100, 98, 98);
     height: 42vh;
     width: 33%;
+    margin-bottom: 2rem;
 }
+
 
 @media (max-width:850px) and (min-width:650px){
     #frontend,#backend{

@@ -58,7 +58,7 @@
 #formp {
     color: white;
     font-size: 2rem;
-    text-decoration: underline solid whitesmoke;
+    font-weight: 600;
 }
 
 input[type=text] {

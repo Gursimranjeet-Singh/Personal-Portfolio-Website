@@ -103,6 +103,7 @@
       flex-direction: column;
       gap: 5rem;
       align-items: center;
+      margin-top: 10rem;
     }
   
     #coding,
@@ -110,7 +111,7 @@
     #sport,
     #travelling {
       width: 35rem;
-      height: 64vh;
+      
     }
   
     #coding {
@@ -184,7 +185,7 @@
     #sport,
     #travelling {
       width: 27rem;
-      height: 40rem;
+    
     }
   }
   

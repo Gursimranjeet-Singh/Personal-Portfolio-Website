@@ -238,7 +238,7 @@ img {
     transition-timing-function: ease-in;
     transition-duration: 2s;
     margin-top: 25rem;
-    margin-right: 10vw;
+    
 
 }
 
@@ -422,6 +422,7 @@ img {
         height:30rem ;
         width: 30rem;
         margin-left:auto;
+        margin-right: 2rem;
     }
     #bar{
         display: block;
@@ -458,6 +459,8 @@ img {
         height:30rem ;
         width: 30rem;
         margin-left:auto;
+        margin-right: 2rem;
+        
     }
     #bar{
         display: block;
@@ -490,6 +493,7 @@ img {
         height:20rem ;
         width: 20rem;
         margin-left:auto;
+        margin-right: 2rem;
     }
     #bar{
         display: block;
